@@ -1,5 +1,5 @@
 export {generatePhotos};
-import { getRandomNumber } from "./pulFunction";
+import { getRandomNumber } from "./pulFunction.js";
 
 function generatePhotos() {
 
@@ -17,4 +17,3 @@ function generatePhotos() {
     return photos;
   }
 
-  
