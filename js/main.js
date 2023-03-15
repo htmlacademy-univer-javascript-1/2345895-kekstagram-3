@@ -1,3 +1,3 @@
-import { generatePhotos } from "./hedFunction.js";
+import { generatePhotos } from './hedFunction.js';
 
 generatePhotos();
