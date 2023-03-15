@@ -9,7 +9,7 @@ function getRandomNumber(min, max) {
       const photo = {
         id: i,
         url: `photos/${i}.jpg`,
-        description: `Dima ${i}`,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         likes: getRandomNumber(15, 200),
         comments: getRandomNumber(0, 200)
       };
