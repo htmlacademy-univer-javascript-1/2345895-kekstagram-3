@@ -1,7 +1,4 @@
-export { getRandomNumber };
-export { maxLineString };
-
-function maxLineString(string, length) {
+function haslegalString(string, length) {
   return string.length <= length;
 }
 function getRandomNumber(min, max) {
