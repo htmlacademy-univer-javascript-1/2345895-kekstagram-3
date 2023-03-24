@@ -1,7 +1,7 @@
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  
+
   function generatePhotos() {
 
     const photos = [];
@@ -17,10 +17,9 @@ function getRandomNumber(min, max) {
     }
     return photos;
   }
-  
+
   function maxLineString (string, length) {
     return string.length <= length;
   }
   const photos = generatePhotos();
   console.log(photos[0]);
-  
