@@ -16,5 +16,4 @@ function generatePhotos() {
   return photos;
 }
 
-
 export { generatePhotos };
