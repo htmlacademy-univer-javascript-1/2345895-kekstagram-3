@@ -11,7 +11,7 @@ function generatePhotos() {
       likes: getRandomNumber(15, 200),
       comments: getRandomNumber(0, 200)
     };
-    photos [i-1] = photo;
+    photos [i - 1] = photo;
   }
   return photos;
 }
