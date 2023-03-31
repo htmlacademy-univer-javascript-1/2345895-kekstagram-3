@@ -3,7 +3,7 @@ import { getRandomNumber } from './pulFunction.js';
 function generatePhotos() {
 
   const photos = [];
-  for (let i = 0; i < 25; i++) {
+  for (let i = 1; i <= 25; i++) {
     const photo = {
       id: i,
       url: `photos/${i}.jpg`,
@@ -11,7 +11,7 @@ function generatePhotos() {
       likes: getRandomNumber(15, 200),
       comments: getRandomNumber(0, 200)
     };
-    photos.push(photo);
+    photos [i - 1] = photo;
   }
   return photos;
 }
