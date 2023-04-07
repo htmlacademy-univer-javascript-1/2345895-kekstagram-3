@@ -1,4 +1,4 @@
-import { generatePhotos } from './hed-function.js';
+import { generatePhotos } from './hedFunction.js';
 import { renderPictures } from './pictures.js';
 generatePhotos();
 
