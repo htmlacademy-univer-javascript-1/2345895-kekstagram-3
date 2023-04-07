@@ -5,22 +5,22 @@ const imageForm = document.querySelector('.img-upload__form');
 const editablePhoto = document.querySelector('#editable-photo');
 
 fileInput.addEventListener('change', function() {
-photoEditor.classList.remove('hidden');
-document.body.classList.add('modal-open');
+  photoEditor.classList.remove('hidden');
+  document.body.classList.add('modal-open');
 });
 
 function resetImageEditor() {
-photoEditor.classList.add('hidden');
-document.body.classList.remove('modal-open');
-imageForm.reset();
+  photoEditor.classList.add('hidden');
+  document.body.classList.remove('modal-open');
+  imageForm.reset();
 }
 
 document.addEventListener('keyup', function(event) {
-if (event.key === 'Escape') {
-resetImageEditor();
-}
+  if (event.key === 'Escape') {
+    resetImageEditor();
+  }
 });
 
 closeButton.addEventListener('click', function() {
-resetImageEditor();
+  resetImageEditor();
 });
