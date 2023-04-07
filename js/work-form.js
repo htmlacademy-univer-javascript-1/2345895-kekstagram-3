@@ -13,8 +13,6 @@ function resetImageEditor() {
 photoEditor.classList.add('hidden');
 document.body.classList.remove('modal-open');
 imageForm.reset();
-editablePhoto.removeAttribute('style');
-editablePhoto.removeAttribute('class');
 }
 
 document.addEventListener('keyup', function(event) {
