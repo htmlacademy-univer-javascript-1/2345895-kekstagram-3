@@ -15,6 +15,5 @@ export function renderPictures(data) {
 
     fragment.appendChild(pictures);
   });
-
   picturesContainet.appendChild(fragment);
 }
