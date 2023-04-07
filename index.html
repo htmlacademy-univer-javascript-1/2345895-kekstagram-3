@@ -32,7 +32,7 @@
       <section class="img-upload">
         <div class="img-upload__wrapper">
           <h2 class="img-upload__title  visually-hidden">Загрузка фотографии</h2>
-          <form class="img-upload__form" id="upload-select-image" method="post" enctype="multipart/form-data"
+          <form class="img-upload__form" action="https://27.javascript.pages.academy/kekstagram-simple" id="upload-select-image" method="post" enctype="multipart/form-data"
             autocomplete="off">
 
             <!-- Изначальное состояние поля для загрузки изображения -->
@@ -126,10 +126,10 @@
                 <!-- Добавление хэш-тегов и комментария к изображению -->
                 <fieldset class="img-upload__text text">
                   <div class="img-upload__field-wrapper">
-                    <input class="text__hashtags" name="hashtags" placeholder="#ХэшТег">
+                    <input class="text__hashtags" name="hashtags" placeholder="#ХэшТег" required>
                   </div>
                   <div class="img-upload__field-wrapper">
-                    <textarea class="text__description" name="description" placeholder="Ваш комментарий..."></textarea>
+                    <textarea class="text__description" maxlength="140" minlength="20" name="description" placeholder="Ваш комментарий..." required></textarea>
                   </div>
                 </fieldset>
 
@@ -249,8 +249,9 @@
   </template>
   <script type="module" src="js/main.js"></script>
   <script type="module" src="js/hedFunction.js"></script>
-  <script type="module" src="js/pulFunction.js"></script>
+  <script type="module" src="js/pul-function.js"></script>
   <script type="module" src="js/pictures.js"></script>
+  <script type="module" src="js/work-form.js"></script>
 </body>
 
 </html>

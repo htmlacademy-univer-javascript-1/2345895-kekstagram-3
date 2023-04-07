@@ -1,4 +1,4 @@
-import { getRandomNumber } from './pulFunction.js';
+import { getRandomNumber } from './pul-function.js';
 
 function generatePhotos() {
 
