@@ -4,7 +4,18 @@ const closeButton = document.querySelector('#upload-cancel');
 const imageForm = document.querySelector('.img-upload__form');
 const editablePhoto = document.querySelector('#ed-fot');
 
-fileInput.addEventListener('change', function() {
+
+function photoCloseEdit() {
+  photoEditor.classList.add('hidden');
+  document.body.classList.remove('modal-open');
+
+  imageForm.reset();
+  editablePhoto.removeAttribute('style');
+  editablePhoto.removeAttribute('class');
+
+}
+
+fileInput.addEventListener('change', () => {
   photoEditor.classList.remove('hidden');
   document.body.classList.add('modal-open');
 });
@@ -17,13 +28,13 @@ function resetImageEditor() {
   editablePhoto.removeAttribute('class');
 }
 
-document.addEventListener('keyup', function(event) {
+document.addEventListener('keyup', (event) => {
   if (event.key === 'Escape') {
     resetImageEditor();
   }
 });
 
-closeButton.addEventListener('click', function() {
+closeButton.addEventListener('click', () => {
   resetImageEditor();
 });
 
@@ -67,3 +78,5 @@ effectButtons.forEach((button) => {
 
 zoomInButton.addEventListener('click', zoomInPhoto);
 zoomOutButton.addEventListener('click', zoomOutPhoto);
+
+export { photoCloseEdit };
