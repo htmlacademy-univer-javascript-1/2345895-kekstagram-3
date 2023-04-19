@@ -18,8 +18,8 @@ function onSubmitForm(evt) {
 }
 
 function onSendPhotoSuccess() {
-showSuccessMessage();
- photoCloseEdit();
+  showSuccessMessage();
+  photoCloseEdit();
 }
 
 function onSendPhotoError() {
@@ -74,4 +74,4 @@ function refer(body, onSuccess, onFail) {
     });
 }
 
-export {photolod, showError};
+export { photolod, showError };

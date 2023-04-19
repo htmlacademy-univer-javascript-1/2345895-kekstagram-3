@@ -13,9 +13,9 @@ function photoCloseEdit() {
   editablePhoto.removeAttribute('style');
   editablePhoto.removeAttribute('class');
 
-  }
+}
 
-fileInput.addEventListener('change', function() {
+fileInput.addEventListener('change', function () {
   photoEditor.classList.remove('hidden');
   document.body.classList.add('modal-open');
 });
@@ -28,13 +28,13 @@ function resetImageEditor() {
   editablePhoto.removeAttribute('class');
 }
 
-document.addEventListener('keyup', function(event) {
+document.addEventListener('keyup', function (event) {
   if (event.key === 'Escape') {
     resetImageEditor();
   }
 });
 
-closeButton.addEventListener('click', function() {
+closeButton.addEventListener('click', function () {
   resetImageEditor();
 });
 
@@ -79,4 +79,4 @@ effectButtons.forEach((button) => {
 zoomInButton.addEventListener('click', zoomInPhoto);
 zoomOutButton.addEventListener('click', zoomOutPhoto);
 
-export{photoCloseEdit};
+export { photoCloseEdit };
