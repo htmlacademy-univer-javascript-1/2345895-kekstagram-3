@@ -15,7 +15,7 @@ function photoCloseEdit() {
 
 }
 
-fileInput.addEventListener('change', function () {
+fileInput.addEventListener('change', () => {
   photoEditor.classList.remove('hidden');
   document.body.classList.add('modal-open');
 });
@@ -28,13 +28,13 @@ function resetImageEditor() {
   editablePhoto.removeAttribute('class');
 }
 
-document.addEventListener('keyup', function (event) {
+document.addEventListener('keyup', (event) => {
   if (event.key === 'Escape') {
     resetImageEditor();
   }
 });
 
-closeButton.addEventListener('click', function () {
+closeButton.addEventListener('click', () => {
   resetImageEditor();
 });
 
