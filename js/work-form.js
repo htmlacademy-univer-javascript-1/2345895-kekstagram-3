@@ -4,6 +4,17 @@ const closeButton = document.querySelector('#upload-cancel');
 const imageForm = document.querySelector('.img-upload__form');
 const editablePhoto = document.querySelector('#ed-fot');
 
+
+function photoCloseEdit() {
+  photoEditor.classList.add('hidden');
+  document.body.classList.remove('modal-open');
+
+  imageForm.reset();
+  editablePhoto.removeAttribute('style');
+  editablePhoto.removeAttribute('class');
+
+  }
+
 fileInput.addEventListener('change', function() {
   photoEditor.classList.remove('hidden');
   document.body.classList.add('modal-open');
@@ -67,3 +78,5 @@ effectButtons.forEach((button) => {
 
 zoomInButton.addEventListener('click', zoomInPhoto);
 zoomOutButton.addEventListener('click', zoomOutPhoto);
+
+export{photoCloseEdit};
